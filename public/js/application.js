@@ -1,8 +1,10 @@
 $(document).ready(function() {
   
-  $(document).bind('keyup', function(q) {
-    console.log('we pressed q');
-
+  $(document).bind('keyup', function(keystroke) {
+    if(keystroke.keyCode == 81){
+    console.log('we pressed q');} 
+    else if(keystroke.keyCode == 80){
+    console.log('we pressed p');}
   });
 });
 
