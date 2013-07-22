@@ -1,10 +1,10 @@
-$(document).ready(function() {
-  
-  $(document).bind('keyup', function(keystroke) {
+$(document).ready(function(){
+  $(document).bind('keyup', function(keystroke){
     if(keystroke.keyCode == 81){
-    console.log('we pressed q');} 
+      console.log('we pressed q');
+      $("#player1_strip > .active").removeClass('active');}
     else if(keystroke.keyCode == 80){
-    console.log('we pressed p');}
+      console.log('we pressed p');}
   });
 });
 
